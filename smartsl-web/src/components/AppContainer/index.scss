@@ -1,0 +1,31 @@
+.app-container {
+  height: 100vh;
+  .header {
+    background: white !important;
+    margin: 3px;
+
+    .ant-menu {
+      height: 100%;
+      width: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .content {
+    height: 100%;
+    overflow: auto;
+    padding: 15px;
+    background: white;
+    margin: 3px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 10px 50px;
+    background: white !important;
+    margin: 3px;
+  }
+}

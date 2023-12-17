@@ -1,0 +1,9 @@
+## components
+## config
+## constants
+## context
+## pages
+## routes
+## styles
+## test
+## App.tsx

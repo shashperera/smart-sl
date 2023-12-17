@@ -1,0 +1,23 @@
+// flex box mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Shadow mixins
+@mixin shadow-sm{
+  box-shadow: 0 0 10px #a7a7a7;
+}
