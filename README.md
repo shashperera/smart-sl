@@ -1,7 +1,7 @@
 # smartsl-api
 
 # Description
-This project is a Spring Boot application. It has following layers
+This project is a Spring Boot application. It has following layers,
 
 ## Domain layer
 Layer that contains all Entities and DTO Objects to be used in the project.
@@ -10,17 +10,17 @@ when creating entity and dto classes make sure to add implements "Serializable".
 after implement Serializable in intellij IDE click class name and press Alt + Enter.
 then it will suggest to auto generate serial value (if it is not working see this link https://mkyong.com/intellij/how-to-generate-serialversionuid-in-intellij-idea/).
 
-##Repository layer
+## Repository layer
 Layer that contains all repositories to be used in the project. used jpa repository in this module to communicate with DB
 
-##Service layer
+## Service layer
 layer that contains project services/business logics. Which contains interfaces for each services
 and the implementation of the service interface.
 
-##Facade layer
+## Facade layer
 layer that contains project service selector/delegator. Which contains interfaces for each facade and implementation of the facade interface.
 
-##controller layer
+## Controller layer
 It contains all rest api controllers
 It follows the "http://localhost:8080/smartsl/****" according rest api.
 
