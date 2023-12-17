@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "34d7af99-ee9c-414d-939e-7cf1fa8111d1",
+		"name": "smart sl",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"Yasuri1994\",\r\n    \"firstName\": \"Yasuri\",\r\n    \"lastName\": \"Methsila\",\r\n    \"email\": \"yasuri@gmail.com\",\r\n    \"mobileNo\": \"07117858761\",\r\n    \"password\" : \"10-10-10\",\r\n    \"userRole\": {\r\n        \"id\": 2\r\n    },\r\n    \"isForeigner\" : 0,\r\n    \"nic\": \"940820359V\",\r\n    \"passportNumber\": \"\",\r\n    \"address\": \"Nattandiya\",\r\n    \"city\": \"nattandiya\",\r\n    \"createdBy\": 1,\r\n    \"status\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/smartsl/create-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"smartsl",
+								"create-user"
+							]
+						},
+						"description": "create user"
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"firstName\": \"Yasuri\",\r\n    \"lastName\": \"Methsila\",\r\n    \"mobileNo\": \"07117858761\",\r\n    \"isForeigner\" : 0,\r\n    \"nic\": \"940820359V\",\r\n    \"passportNumber\": \"\",\r\n    \"address\": \"Nattandiya1\",\r\n    \"city\": \"nattandiya\",\r\n    \"updatedBy\" : 1,\r\n    \"status\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/smartsl/update-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"smartsl",
+								"update-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : null,\r\n    \"username\" : \"l\",\r\n    \"name\" : \"\",\r\n    \"email\": \"ru\",\r\n    \"currentPage\": 0,\r\n    \"pageSize\": 10,\r\n    \"orderDirection\" : \"ASC\",\r\n    \"sortBy\": \"id\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/smartsl/search-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"smartsl",
+								"search-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find user by id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/smartsl/find-user-by-id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"smartsl",
+								"find-user-by-id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user role",
+			"item": [
+				{
+					"name": "create user role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Driver1\",\r\n    \"code\" : \"001\",\r\n    \"status\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/smartsl/create-user-role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"smartsl",
+								"create-user-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/smartsl/delete-user-role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"smartsl",
+								"delete-user-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"name\" : \"Driver1\",\r\n    \"code\" : \"DRIVER_001\",\r\n    \"status\" : 1,\r\n    \"updatedBy\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/smartsl/update-user-role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"smartsl",
+								"update-user-role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all user role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/smartsl/find-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"smartsl",
+								"find-all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "create route",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Shash\",\r\n    \"code\" : \"1234\",\r\n    \"start_location\" : \"Kad\",\r\n    \"end_location\" : \"Col\",\r\n    \"distance\" : 20,\r\n    \"type\" : 2,\r\n    \"maximum_cost\" : 50,\r\n    \"minimum_cost\" : 2,\r\n    \"duration\" : 23,\r\n    \"fair_rate\" : 25,\r\n    \"created_at\" : \"2021-11-09\",\r\n    \"created_by\" : 1,\r\n    \"updated_at\" : \"2021-11-11\",\r\n    \"updated_by\" : 2,\r\n    \"minimum_distance\" : \"10\",\r\n    \"status\" : 5\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/smartsl/create-route",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"smartsl",
+						"create-route"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
